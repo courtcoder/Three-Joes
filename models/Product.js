@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
+const Category = require('./Category');
 
 // create our Product model
 class Product extends Model {}
@@ -36,7 +37,8 @@ Product.init(
       allowNull: false,
       validate: {
         isInt: true
-      }
+      },
+      references: Category.id
     }
   },
   {
