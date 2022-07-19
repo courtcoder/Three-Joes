@@ -4,6 +4,7 @@ const { User } = require('../../models');
 
 // get all users
 router.get('/', (req, res) => {
+
   User.findAll({
     attributes: { exclude: ['password'] }
   })
@@ -12,12 +13,14 @@ router.get('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+
 });
 
 
 
-
+// get one user by id
 router.get("/:id", (req, res) => {
+
   User.findOne({
       attributes: { exclude: ["password"] },
       where: {
@@ -35,12 +38,14 @@ router.get("/:id", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+
 });
 
 
 
 // create new user
 router.post("/", (req, res) => {
+  
   User.create({
     username: req.body.username,
     first_name: req.body.first_name,
@@ -53,6 +58,7 @@ router.post("/", (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
+
 });
 
 
@@ -82,6 +88,7 @@ router.put("/:id", (req, res) => {
 
 // delete user by id
 router.delete("/:id", (req, res) => {
+
   User.destroy({
     where: {
       id: req.params.id
@@ -92,6 +99,7 @@ router.delete("/:id", (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
+  
 });
 
 
