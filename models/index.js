@@ -1,7 +1,7 @@
 // import models
 const User = require("./User");
-//const Product = require("./Product");
-//const Category = require("./Category");
+const Product = require("./Product");
+const Category = require("./Category");
 
 
 // add associations, examples below
@@ -37,5 +37,7 @@ const User = require("./User");
 
 
 module.exports = {
-  User
+  User,
+  Product,
+  Category
 };
