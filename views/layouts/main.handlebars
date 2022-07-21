@@ -1,33 +1,78 @@
-<!DOCTYPE html>
+{{! main handlebars file }}
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TJACBTP</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Three Joe's and Courtney By The Poole</h1>
-            <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
-            </nav> 
-        </header>
-        <main>
-            {{{ body }}}
-        </main>
-        <footer>
-            Thank you for visiting Three Joe's and Courtney By The Poole!
-        </footer>
-    </div>
-    {{#if loggedIn}}
-        <script src="/javascript/logout.js"></script>
-    {{/if}}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Three Joe's and Courtney by the Poole - Welcome</title>
+  </head>
+  <body>
+    <header>
+      <div id="wrapper" class="has-background-danger">
+        <h1>
+          <a href="/">Three Joe's and Courtney by the Poole Restaurant
+          </a>
+        </h1>
+        <nav class="has-background-danger">
+          <div class="columns">
+            <div class="column is-white">
+              Menu
+            </div>
+            <div class="column">
+              Order
+            </div>
+            <div class="column">
+              About Us
+            </div>
+            <div class="column">
+              Login / Sign-Up
+            </div>
+          </div>
+        </nav>
+      </div><br />
+      <div class="autoplay">
+        <div><img
+            src="https://cdn.pixabay.com/photo/2020/03/21/11/17/burger-4953465_1280.jpg"
+          /></div>
+        <div><img
+            src="https://cdn.pixabay.com/photo/2019/03/26/00/41/hot-dog-4081683_1280.jpg"
+          /></div>
+        <div><img
+            src="https://cdn.pixabay.com/photo/2014/05/23/23/17/dessert-352475_1280.jpg"
+          /></div>
+      </div>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+      Thanks for visiting!
+    </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $('.autoplay').slick({ slidesToShow: 1, slidesToScroll: 1, autoplay: true,
+      autoplaySpeed: 3000, arrows: false, });
+    </script>
+  </body>
 </html>
