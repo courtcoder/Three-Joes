@@ -25,17 +25,21 @@
         </h1>
         <nav class="has-background-danger">
           <div class="columns">
-            <div class="column is-white">
-              Menu
+            <div class="column">
+              <a href="/menu">Menu</a>
             </div>
             <div class="column">
-              Order
+              <a href="/order">Order</a>
             </div>
             <div class="column">
-              About Us
+              <a href="/about-us">About Us</a>
             </div>
             <div class="column">
-              Login / Sign-Up
+              {{#if loggedIn}}
+                <a href="/logout">Logout</a>
+              {{else}}
+                <a href="/login">Login / Sign-Up</a>
+              {{/if}}
             </div>
           </div>
         </nav>

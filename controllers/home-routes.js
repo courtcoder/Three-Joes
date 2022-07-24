@@ -7,43 +7,23 @@ router.get("/", (req, res) => {
   console.log(req.session)
 });
 
-
-
-
-
-router.get("/joe", (req, res) => {
-  if (req.session.loggedIn) {
-// I think this is the area that has to work for the login, I need to pass the session data somehow
-  }
-  
-})
-.then(dbUserData => {
-  const user = dbUserData.map(user => user.get({ plain: true }));
-  res.render("joe-test-login", {
-    user,
-    loggedIn: req.session.loggedIn
-  });
-})
-
-router.get("/error", (req, res) => {
-  res.render("error");
+router.get("/menu", (req, res) => {
+  res.render("menu");
 });
 
+router.get("/order", (req, res) => {
+  res.render("order");
+});
 
-
-
-
-
-
-
-
+router.get("/about-us", (req, res) => {
+  res.render("about-us");
+});
 
 router.get("/login", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
-
+  // if (req.session.loggedIn) {
+  //   res.redirect("/");
+  //   return;
+  // }
   res.render("login");
 });
 
