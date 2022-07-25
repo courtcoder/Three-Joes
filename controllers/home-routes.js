@@ -8,7 +8,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/menu", (req, res) => {
-  res.render("menu");
+    console.log(req.session);
+    res.render("menu", req.session);
 });
 
 router.get("/order", (req, res) => {
@@ -25,6 +26,20 @@ router.get("/login", (req, res) => {
   //   return;
   // }
   res.render("login");
+});
+
+
+router.get("/logout", (req, res) => {
+    
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+  })
+      res.redirect("/");
+  } else {
+    res.status(404).end();
+  }
+  
 });
 
 module.exports = router;
