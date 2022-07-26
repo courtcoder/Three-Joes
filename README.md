@@ -1,4 +1,4 @@
-# Three Joe's Burgers and Hot Dogs
+# Three Joe's and Courtney by the Poole Restaurant
 ## Project #2 - Team Members
 - Courtney Casci
 - Bryce Poole
@@ -47,5 +47,29 @@ This details the current database structure.
 * category
     * id
     * category_name
+
+---
+
+## Project Description:
+
+This project will allow the users to browse a menu, select items to add to an order, then checkout. They will be required to sign in if they wish to place an order, otherwise they will be able to freely browse the site and see all of our tasty offerings. 
+
+## User Story:
+
+AS A consumer  
+I WANT to be able to visit the restaurants website  
+SO THAT I can place an order for pickup
+
+## Presentation:
+
+
+
+## Links:
+
+Github Repo
+Live Site
+
+## Screenshot:
+
 
 
