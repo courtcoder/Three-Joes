@@ -30,13 +30,17 @@ function getProductData(pid) {
             price: price
         };
 
-        console.log(`orderLine: ${orderLine}`);
 
-        
+        // just tests to confirm proper functionality
+        console.log(`orderLine: ${orderLine}`);
 
         orderArr.push(orderLine);
 
         console.log(`orderArr: ${JSON.stringify(orderArr)}`);
+
+        // pushing data to the modal, but this doesn't display in the modal as the modal is part of the main.handlebars page. Was just a test to see if
+        // I could call to another page.
+        addCartItem(orderArr);
 
     });
 }

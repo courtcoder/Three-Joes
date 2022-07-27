@@ -14,6 +14,13 @@ function activateModal() {
   modal.classList.add("is-active");
 }
 
+function addCartItem(item) {
+  // test to make sure it reaches the modal script
+  console.log(`item on modal: ${JSON.stringify(item)}`);
+  
+
+} 
+
 function proceedToPayment() {
   console.log("this works");
 }
