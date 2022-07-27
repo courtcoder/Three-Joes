@@ -1,9 +1,58 @@
 {{#if loggedIn}}
-<a href="/logout">Logout</a>
+  <a href="/logout">Logout</a>
 {{/if}}
-<div>Menu Content Here!</div>
-<p>Username: {{username}}</p>
-<p>First name: {{first_name}}</p>
-<p>Last name: {{last_name}}</p>
-<p>Is user logged in? {{loggedIn}}</p>
+
+<nav class="container">
+  <ul class="category-list columns">
+    {{#each categories as |category|}}
+      <li class="column title"><a href="#{{category.category_name}}">{{category.category_name}}</a></li>
+    {{/each}}
+  </ul>
+</nav>
+<div>
+  </br>
+  </br>
+  </br>
+  </br>
+</div>
+<div class=" has-background-danger">
+  {{#each categories as |category|}}
+    <div class="category-container container" id="{{category.category_name}}">
+      <div class="has-background-link"></div>
+      <h1 class="title has-text-centered has-text-white">{{category.category_name}}</h1>
+      <div class="columns is-centered  is-multiline">
+        {{#each category.products}}
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <p class="card-header-title is-centered has-background-link has-text-white">
+                {{ prod_name }}
+                </p>
+              </div>
+              </br>
+              <div class="content">
+                {{ prod_desc }}
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-item">{{ price }}</div>
+                <button class="button is-warning card-footer-item">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    </br>
+  {{/each}}
+</div>
 
