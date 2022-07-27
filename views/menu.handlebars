@@ -15,6 +15,7 @@
   </br>
 </div>
 <div class=" has-background-danger">
+  <div id="menu-button" >
   {{#each categories as |category|}}
     <div class="category-container container" id="{{category.category_name}}">
       <div class="has-background-link"></div>
@@ -44,9 +45,9 @@
               </div>
               <div class="card-footer">
                 <div class="card-footer-item">{{ price }}</div>
-                <div id="menu-button" >
-                  <button data-id={{id}} class="button is-warning card-footer-item">Add to Order</button>
-                </div>
+                
+                  <button id={{id}} class="button is-warning card-footer-item">Add to Order</button>
+                
               </div>
             </div>
           </div>
@@ -56,6 +57,7 @@
     </div>
     </br>
   {{/each}}
+  </div>
 </div>
 
 <script src="/javascript/create-order.js"></script>

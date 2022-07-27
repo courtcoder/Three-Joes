@@ -3,7 +3,7 @@ var orderArr = [ ];
 var buttonHandler = function(event) {
     event.preventDefault();
     
-    var wtf = event.target.dataset.id;
+    var wtf = event.target.id;
     //alert(wtf);
     console.log(wtf);
     getProductData(wtf);
