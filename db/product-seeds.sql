@@ -1,0 +1,14 @@
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Fried Mozzarella","Creamy mozzarella cheese deep fried until golden brown, served with maranara sauce",9.99,1);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Loaded Cheese Fries","Our homemade fries smothered in our special three cheese blend, topped with bacon and served with a chipotle ranch dressing",11.99,1);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Spinach & Artichoke Dip","Spinach, artichokes, Romano, sauteed onions & red bell peppers. Topped with Parmesan bread crumbs and served with tortilla chips & salsa",10.89,1);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("New York Dog","All beef hot dog, deli mustard, sauerkraut and onions",6.25,2);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Chicago Dog","All beef hot dog, yellow mustard, green relish, tomatoes, onions, peppers and light sea salt",6.25,2);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("The Big Dog","Foot long, all beef hot dog with your choice of any offered toppings",7.25,2);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Three Joe's Bacon Cheeseburger","Cheddar, all-natural cheddar spread, lettuce, tomato, red onions and of course, bacon!",12.25,3);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Philly Cheesesteak Burger","Our classic burger, piled high with layers of roast beef, onions, red & green bell peppers and melted cheese",14.79,3);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Classic Cheeseburger","American cheese, lettuce, tomato and red onions",11.25,3);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Oreo Dream Cheesecake","Creamy Cheesecake Layered with Oreo® Cookies, Topped with Oreo® Cookie Mousse and Chocolate Icing",8.95,4);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Toasted Marshmallow S'Mores Cheesecake","Cheesecake Topped with marshmallow and graham crackers",8.95,4);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Peanut Butter Cup Fudge Cheesecake","Creamy cheesecake swirled with caramel, peanut butter and various candies",9.25,4);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Lemon Raspberry Cheesecake","Raspberry vanilla cake, creamy lemon cheesecake, lemon mousse",8.75,4);
+INSERT INTO product (prod_name, prod_desc, price, category_id) VALUES ("Original House Cheesecake","Three Joe's Original Cheesecake. Graham cracker crust with a sour cream topping",8.75,4);
