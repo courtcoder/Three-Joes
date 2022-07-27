@@ -1,19 +1,34 @@
 <div class="title has-text-centered">Checkout</div>
 <div class="columns mx-2 mb-5">
   <div class="column">
-    <p class="title is-4">Payment Information</p>
-    <input class="input" type="text" placeholder="Name on Card" />
-    <div class="columns">
-      <div class="column">
-        <input class="input" type="text" placeholder="Card Number" />
+    <p class="title has-text-centered is-4">Payment Information</p>
+    <p class="title is-5">CARD NUMBER</p>
+    <input class="input mb-2" type="text" placeholder="Invalid Card No." />
+    <div class="columns is-multiline">
+      <p class="column is-half title is-5">EXPIRATION DATE</p>
+      <p class="column is-half title is-5">EXPIRATION DATE</p>
+      <div class="column is-half">
+        <input class="input" type="text" placeholder="MM/YY" />
       </div>
-      <div class="column">
+      <div class="column is-half">
         <input class="input" type="text" placeholder="CVV" />
       </div>
     </div>
   </div>
   <div class="column">
-    <div class="box column">words</div>
+    <p class="title is-4">Your Items</p>
+    <div class="box column">
+      <p class="title is-5">Total:{{total_price}}</p>
+      <div class="columns is-multiline">
+        <div class="column is-three-fifths">ITEMS</div>
+        <div class="column is-one-fifth">QUANTITY</div>
+        <div class="column is-one-fifth">PRICE</div>
+        <div class="column is-three-fifths">exampleItem</div>
+        <div class="column is-one-fifth">exampleQty</div>
+        <div class="column is-one-fifth">examplePrice</div>
+      </div>
+    </div>
+
   </div>
 </div>
 <div class="columns mx-2 mb-5">
