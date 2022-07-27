@@ -19,8 +19,8 @@
   </head>
   <body>
     <header>
-      <div id="wrapper" class="has-background-info">
-        <h1 id="wrapper" class="has-text-white">
+      <div id="wrapper" >
+        <h1 id="wrapper" >
           Three Joe's and Courtney by the Poole Restaurant
         </h1>
         <nav id="navbar" class="has-background-link-dark">
@@ -40,11 +40,12 @@
               {{else}}
                 <a href="/login">Login / Sign-Up</a>
               {{/if}}
-              <button class="button" id="cart-button">View Cart</button>
+              <button class="button is-danger" id="cart-button">View Cart</button>
             </div>
           </div>
         </nav>
       </div><br />
+      </div>
       <div class="autoplay">
         <div><img
             src="https://cdn.pixabay.com/photo/2020/03/21/11/17/burger-4953465_1280.jpg"
@@ -55,7 +56,6 @@
         <div><img
             src="https://cdn.pixabay.com/photo/2014/05/23/23/17/dessert-352475_1280.jpg"
           /></div> 
-      </div>
     </header>
     <main>
       {{{body}}}

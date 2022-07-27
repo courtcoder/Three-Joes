@@ -16,17 +16,47 @@ header h1 {
     text-align: center;
     background: #BB133E;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
  
 header a {
     color: #fff;
     text-decoration: underline;
+    font-size: 1.5em;
+    margin: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+header a:hover {
+    color: #BB133E;
+    text-decoration: underline;
+    border-radius: 10%;
+}
+
+header .button {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+  text-align: center;
+}
+
+header .button 
+
+
 img {
-  width: 80%;
-  height: auto;
+  width: 85%;
+  height: fit-content;
   margin: 0 auto;
+  display: flex;
+  border-radius: 30%;
 }
 
 .login-panel, .signup-panel {
@@ -36,6 +66,7 @@ img {
   box-shadow: 3px 4px 5px #002147;
   border-radius: 15px;
   color: white;
+  background: #002147;
 }
 
 .login-panel {
@@ -89,3 +120,8 @@ input {
   height: 100;
 }
 /* END CART STYLE */
+
+
+.signup-link {
+  color: white;
+}
