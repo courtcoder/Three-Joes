@@ -44,7 +44,9 @@
               </div>
               <div class="card-footer">
                 <div class="card-footer-item">{{ price }}</div>
-                <button class="button is-warning card-footer-item">Add to Order</button>
+                <div id="menu-button" >
+                  <button data-id={{id}} class="button is-warning card-footer-item">Add to Order</button>
+                </div>
               </div>
             </div>
           </div>
@@ -55,3 +57,5 @@
     </br>
   {{/each}}
 </div>
+
+<script src="/javascript/create-order.js"></script>
