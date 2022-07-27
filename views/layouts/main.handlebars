@@ -41,6 +41,7 @@
               {{else}}
                 <a href="/login">Login / Sign-Up</a>
               {{/if}}
+              <button class="button" id="cart-button">View Cart</button>
             </div>
           </div>
         </nav>
@@ -60,9 +61,41 @@
     <main>
       {{{body}}}
     </main>
+
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Your Cart</p>
+          <p class="modal-card-title">Total: {{price_total}}</p>
+          <button class="delete" id="exit-modal" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body columns is-multiline">
+          {{!-- {{ #each example}} --}}
+          <div class="column is-one-quarter ">
+            <div class="box has-text-centered">
+              <img src="../../images/Puppy-Cat.jpg" alt="Def not a kitty" />
+              <div class="mt-3">Ziggy Stardust</div>
+            </div>
+          </div>
+          {{!-- {{ /each }} --}}
+        </section>
+        <footer class="modal-card-foot columns is-centered">
+          <button class="button is-success" id="submit-order">PROCEED TO CHECKOUT!</button>
+
+            <button class="button" id="exit-modal" href="/order">ADD MORE STUFF!</button>
+
+        </footer>
+      </div>
+    </div>
+
     <footer>
       Thanks for visiting!
     </footer>
+
+    <script
+      src="/javascript/modal.js">
+    </script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
