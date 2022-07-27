@@ -1,13 +1,14 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const { Category, Product, User } = require("../models");
+const withAuth = require("../utils/auth")
 
 router.get("/", (req, res) => {
   res.render("homepage");
   console.log(req.session);
 });
 
-router.get("/menu", (req, res) => {
+router.get("/menu", withAuth, (req, res) => {
   Category.findAll({
     attribtes: ["id", "category_name"],
     include: [
@@ -22,7 +23,7 @@ router.get("/menu", (req, res) => {
         category.get({ plain: true })
       );
       console.log(categories);
-      res.render("menu", { categories });
+      res.render("menu", { categories, loggedIn: true });
     })
     .catch((err) => {
       console.log(err);

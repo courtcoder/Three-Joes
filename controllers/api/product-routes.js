@@ -3,6 +3,7 @@ const sequelize = require('sequelize');
 const { Product, Category } = require('../../models');
 
 
+
 router.get('/', (req, res) => {
 
     Product.findAll({

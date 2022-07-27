@@ -4,8 +4,8 @@ const { Product } = require('../models');
 const productdata = [
   
   {
-    prod_name: "Fried Mozzerella",
-    prod_desc: "Creamy mozzerella cheese deep fried until golden brown, served with maranara sauce",
+    prod_name: "Fried Mozzarella",
+    prod_desc: "Creamy mozzarella cheese deep fried until golden brown, served with maranara sauce",
     price: 9.99,
     category_id: 1 
   },
