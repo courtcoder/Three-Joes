@@ -1,42 +1,40 @@
-
 .card {
   height: 560px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 header h1 {
-   color: #002147;
-    font-size: 3.5em;
-    text-align: center;
-    background: #BB133E;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  color: #002147;
+  font-size: 3.5em;
+  text-align: center;
+  background: #bb133e;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
- 
+
 header a {
-    color: #fff;
-    text-decoration: underline;
-    font-size: 1.5em;
-    margin: 0 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.5em;
+  margin: 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 header a:hover {
-    color: #BB133E;
-    text-decoration: underline;
-    border-radius: 10%;
+  color: #bb133e;
+  text-decoration: underline;
+  border-radius: 10%;
 }
-
 
 img {
   width: 85%;
@@ -46,7 +44,8 @@ img {
   border-radius: 30%;
 }
 
-.login-panel, .signup-panel {
+.login-panel,
+.signup-panel {
   width: 50%;
   padding: 50px 50px;
   text-align: left;
@@ -57,9 +56,8 @@ img {
 }
 
 .login-panel {
-    background-color: #002147;
-    margin: 0 auto;
-
+  background-color: #002147;
+  margin: 0 auto;
 }
 
 .signup-panel {
@@ -83,10 +81,6 @@ input {
   font-size: 2rem;
 }
 
-
-
-
-
 .signup-panel input {
   margin: 10px 0px;
   width: 100%;
@@ -109,9 +103,10 @@ input {
 }
 /* END CART STYLE */
 
-
 .signup-link {
-  color: #BB133E;
+  color: #bb133e;
 }
 
-
+.autoplay {
+  max-height: 300px;
+}
