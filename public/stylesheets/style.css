@@ -11,7 +11,7 @@
 }
 
 header h1 {
-   color: #fff;
+   color: #002147;
     font-size: 3.5em;
     text-align: center;
     background: #BB133E;
@@ -38,18 +38,6 @@ header a:hover {
     border-radius: 10%;
 }
 
-header .button {
-  display: flex;
-  flex: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 15px;
-  text-align: center;
-}
-
-header .button 
-
 
 img {
   width: 85%;
@@ -70,7 +58,8 @@ img {
 }
 
 .login-panel {
-    background-color:;
+    background-color: #002147;
+    margin: 0 auto;
 
 }
 
@@ -123,5 +112,7 @@ input {
 
 
 .signup-link {
-  color: white;
+  color: #BB133E;
 }
+
+
