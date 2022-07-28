@@ -10,11 +10,14 @@ router.get("/", (req, res) => {
 
 router.get("/menu", withAuth, (req, res) => {
   Category.findAll({
-    attribtes: ["id", "category_name"],
+    //order: [["category_id"]], //this displays the headings in order, where does it get this data from?
+    // attribtes: ["id","category_id","category_name"],
+    attribtes: ["id","category_name"],
+    
     include: [
       {
         model: Product,
-        attributes: ["id", "prod_name", "prod_desc", "price"],
+        attributes: ["id", "prod_name", "prod_desc", "price", "category_id","img_id"],
       },
     ],
   })

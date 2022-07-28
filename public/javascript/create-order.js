@@ -21,12 +21,14 @@ function getProductData(pid) {
         var id = data.id;
         var prod_name = data.prod_name;
         var prod_desc = data.prod_desc;
+        var img_id = data.img_id;
         var price = data.price;
 
         var orderLine = {
             id: id,
             prod_name: prod_name,
             prod_desc: prod_desc,
+            img_id: img_id,
             price: price
         };
 
