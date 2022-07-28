@@ -32,7 +32,7 @@ function getProductData(pid) {
 
 
         // just tests to confirm proper functionality
-        console.log(`orderLine: ${orderLine}`);
+        // console.log(`orderLine: ${orderLine}`);
 
         orderArr.push(orderLine);
 
@@ -40,7 +40,7 @@ function getProductData(pid) {
 
         // pushing data to the modal, but this doesn't display in the modal as the modal is part of the main.handlebars page. Was just a test to see if
         // I could call to another page.
-        addCartItem(orderArr);
+        // addCartItem(orderArr);
 
     });
 }
