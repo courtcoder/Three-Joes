@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> db2d20e8814648e48074c9bbb8a04d16b7d8879b
 .card {
   height: 560px;
 }
@@ -61,14 +56,8 @@ img {
 }
 
 .login-panel {
-<<<<<<< HEAD
-    background-color: #;
-    margin: 0 auto;
-
-=======
   background-color: #002147;
   margin: 0 auto;
->>>>>>> db2d20e8814648e48074c9bbb8a04d16b7d8879b
 }
 
 .signup-panel {
@@ -113,6 +102,9 @@ input {
   height: 100;
 }
 /* END CART STYLE */
+
+/* BEGIN HOMEPAGE STYLE */
+/* END HOMEPAGE STYLE */
 
 .signup-link {
   color: #bb133e;
