@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 
 router.get("/menu", withAuth, (req, res) => {
   Category.findAll({
-    //order: [["category_id"]], //this displays the headings in order, where does it get this data from?
+    order: [["catnum"]], //this displays the headings in order, where does it get this data from?
     // attribtes: ["id","category_id","category_name"],
     attribtes: ["id","category_name"],
     

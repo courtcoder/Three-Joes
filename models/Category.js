@@ -16,6 +16,10 @@ Category.init(
       primaryKey: true,
       autoIncrement: true
     },
+    catnum: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     category_name: {
       type: DataTypes.STRING,
       allowNull: false

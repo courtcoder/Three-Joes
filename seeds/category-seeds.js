@@ -4,19 +4,23 @@ const { Category } = require('../models');
 const categorydata = [
 
   {
-    category_id: 1,
+    id: 1,
+    catnum: 1,
     category_name: 'Appetizers'
   },
   {
-    category_id: 2,
+    id: 2,
+    catnum: 2,
     category_name: 'Hot Dogs'
   },
   {
-    category_id: 3,
+    id: 3,
+    catnum: 3,
     category_name: 'Burgers',
   },
   {
-    category_id: 4,
+    id: 4,
+    catnum: 4,
     category_name: 'Desserts',
   },
   

@@ -1,14 +1,24 @@
 var buttonClicked = document.querySelector("#menu-button");
 var orderArr = [];
-var buttonHandler = function (event) {
-  event.preventDefault();
 
-  var wtf = event.target.id;
-  //alert(wtf);
-  getProductData(wtf);
+
+var buttonHandler = function (event) {
+        
+    event.preventDefault();
+    
+    if (event.target.classList.contains("order-button")) {
+
+    var wtf = event.target.id;
+    //alert(wtf);
+    getProductData(wtf);
+    
+    }
+
 };
 
+
 function getProductData(pid) {
+
   fetch(`/api/products/${pid}`)
     .then(function (response) {
       return response.json();
@@ -29,9 +39,13 @@ function getProductData(pid) {
       };
 
       orderArr.push(orderLine);
-
+      
       addCartItem(orderArr);
+
+      console.log(JSON.stringify(orderArr));
+
     });
+    
 }
 
 buttonClicked.addEventListener("click", buttonHandler);
