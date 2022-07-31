@@ -6,20 +6,20 @@
 =======
 {{/if}} --}}
 <nav class="container">
-  <ul class="category-list columns">
+  <div class="category-list columns">
     {{#each categories as |category|}}
-      <li class="column title"><a href="#{{category.category_name}}">{{category.category_name}}</a></li>
+      <div class="column title"><a href="#{{category.category_name}}">{{category.category_name}}</a></div>
     {{/each}}
-  </ul>
+  </div>
 </nav>
-<div>
+{{!-- <div>
   </br>
   </br>
   </br>
   </br>
-</div>
-<div class=" has-background-danger">
-  <div id="menu-button" >
+</div> --}}
+<div class="has-background-danger">
+  <div id="menu-button">
   {{#each categories as |category|}}
     <div class="category-container container" id="{{category.category_name}}">
       <div class="has-background-link"></div>

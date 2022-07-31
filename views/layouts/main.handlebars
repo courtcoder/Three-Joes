@@ -1,5 +1,3 @@
-{{! main handlebars file }}
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,8 +17,8 @@
   </head>
   <body>
     <header>
-      <div id="wrapper" >
-        <h1 id="wrapper" >
+      <div id="wrapper">
+        <h1 id="wrapper">
           Three Joe's and Courtney by the Poole Restaurant
         </h1>
         <nav id="navbar" class="has-background-link-dark">
@@ -41,20 +39,22 @@
                 <a href="/login">Login / Sign-Up</a>
               {{/if}}
             </div>
-              <div class="column">
+              <div class="column has-text-centered">
                 <button class="button is-danger" id="cart-button">View Cart</button>
               </div>
           </div>
         </nav>
-      </div><br />
       </div>
-      <div class="autoplay">
-        <div><img
+      </div>
+      <br>
+      <div class="autoplay hero">
+        <div class="hero-body"><img
             src="/images/burger.jpg"/></div>
-        <div><img
+        <div class="hero-body"><img
             src="/images/hotdog.jpg"/></div>
-        <div><img
+        <div class="hero-body"><img
             src="/images/dessert.jpg"/></div> 
+      </div>
     </header>
     <main>
       {{{body}}}
@@ -103,4 +103,3 @@
     </script>
   </body>
 </html>
-
