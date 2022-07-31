@@ -64,14 +64,51 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Your Cart</p>
-          <p class="modal-card-title">Total: {{price_total}}</p>
+          <p class="modal-card-title">Your Cart:</p>
+          <p class="modal-card-title" id="order-total">Your Total:</p>
           <button class="delete" id="exit-modal" aria-label="close"></button>
         </header>
+        <div class="is-hidden" id="payment-info">
+          <section class="modal-card-body columns is-multiline">
+            <div class="column has-text-centered is-full">
+              <p class="title">Payment Function Coming Soon!</p>
+              <img src="../images/Puppy-Cat.jpg" alt="Def not a kitty" />
+            </div>
+          </section>
+        </div>
         <section class="modal-card-body columns is-multiline" id="product-display">
+          {{!-- Product Displayed --}}
+        </section>
+        <section class="modal-card-body box columns is-multiline" id="order-breakdown">
+          {{!-- Cart Breakdown --}}
+            <div class="column is-full">
+                <p class="title is-4 has-text-centered">
+                  Foods:
+                </p>
+            </div>
+            <div class="column is-full">
+              <div class="columns is-multiline" id="item-breakdown">
+                {{!-- Item Breakdown --}}
+                <div class="column is-half">
+                    <p class="title is-5" id="item-name">
+                      {{!-- item name --}}
+                      butt
+                    </p>
+                </div>
+                <div class="column is-half">
+                    <p class="title is-5 has-text-right" id="item-price">
+                      {{!-- item price --}}
+                      pee
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="column is-full">
+              <p class="title is-4 has-text-centered" id="secondary-total"> Total Payment: 1,9999{{!-- item total --}} </p>
+            </div>
         </section>
         <footer class="modal-card-foot columns is-centered">
-          <a href="/order"><button class="button is-success" id="submit-order">PROCEED TO CHECKOUT!</button></a>
+          <button class="button is-success" id="proceed-button">PROCEED TO PAYMENT!</button>
           <button class="button" id="exit-modal">ADD MORE STUFF!</button>
         </footer>
       </div>
