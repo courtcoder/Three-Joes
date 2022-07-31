@@ -109,3 +109,47 @@ input {
 .signup-link {
   color: #bb133e;
 }
+
+.github-link p {
+  color: #002147;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.github-link p a {
+  color: #bb133e;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.github-link p a:hover {
+  color: #002147;
+}
+
+.members {
+  color: #bb133e;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.story {
+  color: #002147;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: large;
+  font-style: italic;
+}
+
+.address {
+  color: #bb133e;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: large;
+}
+
+iframe {
+  width: 50%;
+  height: 50%;
+  flex: 1 100%;
+}
