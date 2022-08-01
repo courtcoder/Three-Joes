@@ -63,14 +63,26 @@ SO THAT I can place an order for pickup
 
 ## Presentation/Screenshot
 
+Main screen
+![main screen - Three Joe's website](/public/images/screenshot-main.JPG)
+
+Menu screen
+![menu screen - Three Joe's website](/public/images/screenshot-main1.JPG)
+
+Cart screen  
+![cart screen - Three Joe's website](/public/images/screenshot-main2.JPG)
+
 [Live Presentation](https://docs.google.com/presentation/d/15WEYkBOP9_9AuGmD1_xfu5ybtDlUJ3c7lD2jtHKpMWE/edit?usp=sharing)
 
+---
 
 ## Links
 
 [Three Joe's and Courtney by the Poole GitHub Repo](https://github.com/courtcoder/Three-Joes)  
+[Heroku Live Site](https://serene-citadel-89543.herokuapp.com/)  
 [Live Presentation](https://docs.google.com/presentation/d/15WEYkBOP9_9AuGmD1_xfu5ybtDlUJ3c7lD2jtHKpMWE/edit?usp=sharing)
 
+---
 
 ## Summary/Languages
 
